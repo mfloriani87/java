@@ -21,7 +21,7 @@ public class Principal {
 			   mensagem+= "\nTrabalha: "+(trabalha == 0 ? "Sim" : "Não");
 			   
 		// Exibir mensagem
-		JOptionPane.showMessageDialog(null, mensagem);
+		JOptionPane.showInternalMessageDialog(null, mensagem);
 		
 	}
 
