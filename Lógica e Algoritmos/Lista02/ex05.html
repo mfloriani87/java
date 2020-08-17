@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+
+    <script>
+
+        // Função
+        function calcular(){
+
+            // Obter dados
+            var nome = document.getElementById("nome").value
+            var valor = document.getElementById("valor").value
+            var segmento = document.getElementById("segmento").value
+
+            // Variável de cálculo
+            var calculo = 0
+
+            // Estrutura de escolha
+            switch(segmento){
+                case "Vestuário":
+                calculo = valor * 0.95
+                break
+
+                case "Eletrônico":
+                calculo = valor * 0.92
+                break
+
+                case "Alimentício":
+                calculo = valor * 0.90
+                break
+            }
+
+            // Mensagem
+            alert("O produto "+nome+" custará R$ "+calculo)
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <input type="text" placeholder="Nome" id="nome">
+    <input type="text" placeholder="Valor" id="valor">
+    
+    <select id="segmento">
+        <option>Escolha um segmento</option>
+        <option>Vestuário</option>
+        <option>Eletrônico</option>
+        <option>Alimentício</option>
+    </select>
+
+    <input type="button" value="Cadastrar" onclick="calcular()">
+</body>
+</html>
+
+

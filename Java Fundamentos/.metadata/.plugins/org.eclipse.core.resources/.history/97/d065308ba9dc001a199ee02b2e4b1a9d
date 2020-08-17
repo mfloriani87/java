@@ -1,0 +1,24 @@
+package exemplo07;
+
+public class Principal {
+
+	public static void main(String[] args) {
+	
+		/*
+		 	&   E   (Executa obrigatóriamente todas as verificações)
+		 	&&  E   (Assim que encontrar algo falso, pára de verificar)
+		 	|   OU  (Executa obrigatóriamente todas as verificações)
+		 	||  OU  (Assim que encontrar algo falso, pára de verificar)
+		 	^   XOR 
+		*/
+		
+		if((5>4) ^ (6<8)) {
+			System.out.println("Condicional Ok");
+		}else {
+			System.out.println("Condicional Falha");
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 - Vetor</title>
+
+    <script>
+
+        // Vetor
+        var numeros = []
+
+        // Existe 10
+        var existe = false
+
+        // Obter números
+        for(var i=0; i<5; i++){
+            numeros[i] = parseInt(prompt("Informe um número na posição: "+i))
+        }
+
+        // Exibir a posição do número 10
+        for(var i=0; i<5; i++){
+            if(numeros[i] == 10){
+                document.write("Há um número 10 na posição: "+i+"<br>")
+                existe = true
+            }
+        }
+
+        // Caso não encontre o número 10
+        if(existe == false){
+            document.write("Não foi informado o número 10")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

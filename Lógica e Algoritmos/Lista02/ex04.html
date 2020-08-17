@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+
+    <script>
+
+        // Função
+        function acao(cidade){
+
+            // Estrutura de escolha
+            switch(cidade.value){
+                case "Blumenau":
+                alert("Cidade da Oktoberfest")
+                break
+
+                case "Joinville":
+                alert("Maior cidade de Santa Catarina")
+                break
+
+                case "Florianópolis":
+                alert("Capital de Santa Catarina")
+                break
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    <select onchange="acao(this)">
+        <option>Escolha uma cidade</option>
+        <option>Blumenau</option>
+        <option>Florianópolis</option>
+        <option>Joinville</option>
+    </select>
+
+</body>
+</html>
+
+

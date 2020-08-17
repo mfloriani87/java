@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 - Vetor</title>
+
+    <script>
+
+        // Vetor
+        var idades = []
+
+        // Contadores
+        var maiorIdade = 0
+        var menorIdade = 0
+
+        // Obter as idades
+        for(var indice=0; indice<5; indice++){
+            idades[indice] = parseInt(prompt("Informe a "+(indice+1)+"ª idade"))
+        }
+
+        // Exibir as idades
+        for(var indice=0; indice<5; indice++){
+            document.write(idades[indice]+"<br>")
+
+            if(idades[indice] >= 18){
+                maiorIdade++
+            }else{
+                menorIdade++
+            }
+        }
+
+        // Exibir contadores
+        document.write("<hr>")
+        document.write("Maiores de idade: "+maiorIdade)
+        document.write("<br>Menores de idade: "+menorIdade)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

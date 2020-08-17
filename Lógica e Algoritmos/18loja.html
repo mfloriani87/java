@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Estilos -->
+    <style>
+        form{
+            width: 50%;
+            margin: 30px auto;
+        }
+
+        input, select{
+            margin-top: 10px;
+        }
+    </style>
+
+    <!-- JS -->
+    <script>
+
+        // Matriz
+        var dados = []
+
+        // Cadastrar produto
+        function cadastrar(){
+            // Obter os elementos HTML
+            var produto = document.getElementById("produto")
+            var marca = document.getElementById("marca")
+            var valor = document.getElementById("valor")
+
+            // Validar
+            if(produto.value == ""){
+                alert("Informe um produto")
+            }else if(marca.value == "Marca"){
+                alert("Selecione uma marca")
+            }else if(valor.value == ""){
+                alert("Informe um valor")
+            }else if(isNaN(valor.value)){
+                alert("Favor informar um valor válido")
+            }else{
+
+                // Cadastrar na matriz
+                dados.push([produto.value, marca.value, valor.value])
+
+                // Limpar campos
+                produto.value = ""
+                marca.value = "Marca"
+                valor.value = ""
+
+                // Selecionar campo produto
+                produto.focus()
+
+                // Atualizar tabela
+                listar()
+            
+            }
+        }
+
+        // Listar produtos
+        function listar(){
+
+            // Obter o elemento lista
+            var lista = document.getElementById("lista")
+
+            // Limpar
+            lista.innerHTML = ""
+
+            // Laço
+            for(var indice=0; indice<dados.length; indice++){
+                // Criar linha
+                var linha = lista.insertRow(-1)
+
+                // Criar colunas
+                var colunaProduto = linha.insertCell(0)
+                var colunaMarca = linha.insertCell(1)
+                var colunaValor = linha.insertCell(2)
+                var colunaExcluir = linha.insertCell(3)
+
+                // Passar valor das colunas
+                colunaProduto.innerHTML = dados[indice][0]
+                colunaMarca.innerHTML = dados[indice][1]
+                colunaValor.innerHTML = dados[indice][2]
+                colunaExcluir.innerHTML = "<button class='btn btn-danger' onClick='excluir("+indice+")'>Excluir</button>"
+            }
+
+        }
+
+        // Excluir produto
+        function excluir(linha){
+            
+            // Remover produto
+            dados.splice(linha, 1)
+
+            // Atualizar a listagem
+            listar()
+
+        }
+
+
+    </script>
+
+</head>
+<body>
+    
+    <!-- Formulário -->
+    <form>
+        <input type="text" id="produto" placeholder="Produto" class="form-control">
+
+        <select id="marca" class="form-control">
+            <option>Marca</option>
+            <option>LG</option>
+            <option>Samsung</option>
+            <option>Sony</option>
+        </select>
+
+        <input type="text" id="valor" placeholder="Valor" class="form-control">
+        
+        <input type="button" onclick="cadastrar()" value="Cadastrar" class="btn btn-primary">
+    </form>
+
+    <!-- Tabela -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Marca</th>
+                <th>Valor</th>
+                <th>Excluir</th>
+            </tr>
+        </thead>
+
+        <tbody id="lista"></tbody>
+    </table>
+</body>
+</html>

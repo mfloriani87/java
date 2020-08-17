@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09 - Função</title>
+
+    <script>
+
+        // Ação de clique
+        function mensagem(){
+            alert("oi")
+        }
+
+        // Ação de mudança
+        function cidade(elemento){
+            alert("A cidade selecionada é "+elemento.value)
+        }
+
+        // Ação de teclado
+        function teclado(elemento){
+            document.getElementById("texto").innerText = elemento.value
+        }
+
+    </script>
+</head>
+<body>
+    
+    <!-- Exemplo 01 -->
+    <button onclick="mensagem()">Clique aqui</button>
+
+    <!-- Exemplo 02 -->
+    <select onchange="cidade(this)">
+        <option>Escolha uma cidade</option>
+        <option>Blumenau</option>
+        <option>Joinville</option>
+    </select>
+
+    <!-- Exemplo 03 -->
+    <p id="texto"></p>
+    <input type="text" onkeyup="teclado(this)" >
+
+</body>
+</html>

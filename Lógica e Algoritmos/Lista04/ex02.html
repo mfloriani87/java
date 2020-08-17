@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 - Vetor</title>
+
+    <script>
+
+        // Vetor
+        var numeros = []
+
+        // Soma
+        var soma = 0;
+
+        // Obter dez números
+        for(var i=0; i<10; i++){
+            numeros[i] = parseInt(prompt("Informe o "+(i+1)+"º número"))
+
+            soma += numeros[i]
+        }
+
+        // Exibir os dez valores
+        for(var i=0; i<10; i++){
+            document.write(numeros[i]+"<br>")
+        }
+
+        // Exibir a soma
+        document.write("A soma dos valores é "+soma)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

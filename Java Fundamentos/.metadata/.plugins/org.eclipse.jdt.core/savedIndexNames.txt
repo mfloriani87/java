@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/ralf/Documents/Java - Apex/Java Fundamentos/.metadata/.plugins/org.eclipse.jdt.core
+939283709.index
+2234877410.index
+960878.index

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+
+    <script>
+
+        function calcular(){
+            // Obter número
+            var numero = parseInt(document.getElementById("numero").value)
+
+            // Índice
+            var indice = 0
+
+            // Limpar o H1 (Para garantir que não tenha nada escrito)
+            document.getElementById("exibirTabuada").innerHTML = ""
+
+            // Laço
+            while(indice < 11){
+                document.getElementById("exibirTabuada").innerHTML += (numero * indice) + "<br>"
+                indice++
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    
+    <!-- Exibir a tabuada -->
+    <h1 id="exibirTabuada"></h1>
+
+    <!-- Formulário -->
+    <form>
+        <input type="text" placeholder="Número" id="numero">
+        <input type="button" value="Calcular" onclick="calcular()">
+    </form>
+
+</body>
+</html>

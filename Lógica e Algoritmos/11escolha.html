@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11 - Escolha</title>
+
+    <script>
+
+        // Após carregar toda a página, os comandos abaixo serão executados
+        window.onload = function(){
+            // Obter a cor
+            var cor = parseInt(prompt("Selecione uma opção de cor: 1)Azul 2)Amarelo 3)Verde"))
+
+            switch(cor){
+                case 1:
+                document.getElementById("pagina").style.backgroundColor = "blue";
+                break
+
+                case 2:
+                document.getElementById("pagina").style.backgroundColor = "yellow";
+                break
+    
+                case 3:
+                document.getElementById("pagina").style.backgroundColor = "green";
+                break
+                
+                default:
+                alert("Favor informar uma opção de cor válida")
+            }
+        }
+
+    </script>
+</head>
+<body id="pagina">
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+
+    <script>
+
+        // Vetor
+        var numeros = []
+
+        // Contadores
+        var positivo = 0
+        var negativo = 0
+
+        // Obter 5 valores
+        for(var indice=0; indice<5; indice++){
+            numeros[indice] = parseInt(prompt("Posição: "+indice))
+        }
+
+        // Efetuar contagem e exibir os valores do vetor
+        for(var indice=0; indice<5; indice++){
+            document.write(numeros[indice] + "<br>")
+
+            if(numeros[indice] < 0){
+                negativo++
+            }else{
+                positivo++
+            }
+        }
+
+        // Exibir os contador
+        document.write("Positivos: "+positivo)
+        document.write("<br>")
+        document.write("Negativos: "+negativo)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
