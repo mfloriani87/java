@@ -2,5 +2,14 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
+    <fullyQualifiedTypeName name="exemplo02.Aluno"/>
+    <fullyQualifiedTypeName name="atividade01.Produto"/>
+    <fullyQualifiedTypeName name="atividade03.Numero"/>
+    <fullyQualifiedTypeName name="atividade04.Signo"/>
+    <fullyQualifiedTypeName name="atividade05.Colaborador"/>
+    <fullyQualifiedTypeName name="exemplo.Produto"/>
+    <fullyQualifiedTypeName name="teste.Tipo"/>
+    <fullyQualifiedTypeName name="exemplo01.Pessoa"/>
+    <fullyQualifiedTypeName name="exemplo02.Carro"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 </qualifiedTypeNameHistroy>
