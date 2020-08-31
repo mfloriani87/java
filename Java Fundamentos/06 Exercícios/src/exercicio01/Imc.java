@@ -12,6 +12,7 @@ public class Imc {
 		String situacao = situacaoImc(imc);
 		
 		// Mensagem
+		System.out.println("O IMC de "+imc+" tem a situação de "+situacao);
 		
 		
 	}

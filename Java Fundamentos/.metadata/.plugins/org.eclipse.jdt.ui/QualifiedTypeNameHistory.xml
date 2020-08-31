@@ -12,4 +12,16 @@
     <fullyQualifiedTypeName name="exemplo01.Pessoa"/>
     <fullyQualifiedTypeName name="exemplo02.Carro"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="exercicio01.Imc"/>
+    <fullyQualifiedTypeName name="exemplo01.Calculo"/>
+    <fullyQualifiedTypeName name="exemplo.Pessoa"/>
+    <fullyQualifiedTypeName name="exemplo01.Colaborador"/>
+    <fullyQualifiedTypeName name="exercicio03.FolhaPagamento"/>
+    <fullyQualifiedTypeName name="exercicio04.Produto"/>
+    <fullyQualifiedTypeName name="exercicio05.Moeda"/>
+    <fullyQualifiedTypeName name="exercicio06.Investimento"/>
+    <fullyQualifiedTypeName name="exercicio02.Aluno"/>
+    <fullyQualifiedTypeName name="exercicio03.CalculadoraCientifica"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="exercicio03.CalculadoraPadrao"/>
 </qualifiedTypeNameHistroy>
