@@ -11,7 +11,6 @@
     <fullyQualifiedTypeName name="teste.Tipo"/>
     <fullyQualifiedTypeName name="exemplo01.Pessoa"/>
     <fullyQualifiedTypeName name="exemplo02.Carro"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="exercicio01.Imc"/>
     <fullyQualifiedTypeName name="exemplo01.Calculo"/>
     <fullyQualifiedTypeName name="exemplo.Pessoa"/>
@@ -24,4 +23,14 @@
     <fullyQualifiedTypeName name="exercicio03.CalculadoraCientifica"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="exercicio03.CalculadoraPadrao"/>
+    <fullyQualifiedTypeName name="exemplo.Desconto"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="exemplo.Gerente"/>
+    <fullyQualifiedTypeName name="exemplo.Atendente"/>
+    <fullyQualifiedTypeName name="java.awt.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="exemplo02.Pessoa"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
 </qualifiedTypeNameHistroy>
