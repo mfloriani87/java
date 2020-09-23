@@ -1,27 +1,26 @@
 package view;
 
-import java.awt.BorderLayout;
+// Imports
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.table.DefaultTableModel;
-
-import controller.GameController;
-import model.GameModel;
-
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JTabbedPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+
+import controller.GameController;
+import model.GameModel;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 @SuppressWarnings("serial")
 public class Form extends JFrame {
 
-	// Componentes
+	// Components
 	private JPanel contentPane;
 	private JTextField txt1;
 	private JTextField txt2;
@@ -32,7 +31,7 @@ public class Form extends JFrame {
 
 	// Construtor
 	public Form() {
-		// Características básicas do formulário
+		// Form
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 560, 342);
 		contentPane = new JPanel();
@@ -40,12 +39,12 @@ public class Form extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		// Abas
+		// Tabs
 		JTabbedPane tbpAbas = new JTabbedPane(JTabbedPane.TOP);
 		tbpAbas.setBounds(6, 6, 548, 308);
 		contentPane.add(tbpAbas);
 		
-		// Segunda aba
+		// List
 		JPanel pnlListar = new JPanel();
 		tbpAbas.addTab("Listagem", null, pnlListar, null);
 		pnlListar.setLayout(null);
@@ -54,12 +53,11 @@ public class Form extends JFrame {
 		scpJogos.setBounds(6, 6, 515, 250);
 		pnlListar.add(scpJogos);
 		
-		
 		tblJogos = new JTable();
 		tblJogos.setModel(GameController.listGames());
 		scpJogos.setViewportView(tblJogos);
 		
-		// Primeira aba
+		// Add
 		JPanel pnlCadastro = new JPanel();
 		
 		tbpAbas.addTab("Cadastro", null, pnlCadastro, null);

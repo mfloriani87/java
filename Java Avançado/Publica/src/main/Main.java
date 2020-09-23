@@ -8,7 +8,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		// Chamar formulário
+		// Call Form
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {

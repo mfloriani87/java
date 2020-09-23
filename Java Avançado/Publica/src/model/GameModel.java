@@ -2,10 +2,10 @@ package model;
 
 public class GameModel {
 
-	// Atributos
+	// Attributes
 	private int score, minSeason, maxSeason, minRecord, maxRecord;
 	
-	// Construtor
+	// Constructor
 	public GameModel(int score, int minSeason, int maxSeason, int minRecord, int maxRecord) {
 		this.score = score;
 		this.minSeason = minSeason;
