@@ -35,7 +35,7 @@ public class Formulario extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNome = new JLabel("Produto");
+		JLabel lblNome = new JLabel("Nome");
 		lblNome.setBounds(26, 31, 61, 16);
 		contentPane.add(lblNome);
 		
@@ -44,7 +44,7 @@ public class Formulario extends JFrame {
 		contentPane.add(txtNome);
 		txtNome.setColumns(10);
 		
-		JLabel lblMateria = new JLabel("Marca");
+		JLabel lblMateria = new JLabel("Matéria");
 		lblMateria.setBounds(26, 71, 61, 16);
 		contentPane.add(lblMateria);
 		
@@ -53,7 +53,7 @@ public class Formulario extends JFrame {
 		cbxMateria.setBounds(99, 67, 325, 27);
 		contentPane.add(cbxMateria);
 		
-		JLabel lblNota = new JLabel("Valor");
+		JLabel lblNota = new JLabel("Nota");
 		lblNota.setBounds(26, 114, 61, 16);
 		contentPane.add(lblNota);
 		

@@ -1,8 +1,5 @@
 package formulario;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -15,13 +12,17 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 
+@SuppressWarnings("serial")
 public class ClienteFormulario extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField txtNome;
 	private JTextField txtEmail;
 	private JTextField txtTelefone;
+	private JTable table;
 
 	/**
 	 * Create the frame.
@@ -95,5 +96,13 @@ public class ClienteFormulario extends JFrame {
 		Cancelar.setEnabled(false);
 		Cancelar.setBounds(338, 125, 117, 29);
 		contentPane.add(Cancelar);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(16, 171, 435, 148);
+		contentPane.add(scrollPane);
+		
+		table = new JTable();
+		table.setModel(ClienteControle.listarClientes());
+		scrollPane.setViewportView(table);
 	}
 }
