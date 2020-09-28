@@ -24,7 +24,7 @@ public class GameController {
 		// Columns
 		list.addColumn("Jogo");
 		list.addColumn("Placar");
-		list.addColumn("Mínimo de temporada");
+		list.addColumn("Mínimo de temporada"); 
 		list.addColumn("Máximo de temporada");
 		list.addColumn("Quebra de recorde mínimo");
 		list.addColumn("Quebra de recorde máximo");
